@@ -1,0 +1,15 @@
+npts 51 49 58                        # num.grid points in xyz
+gridfld SlyD_delta-IF_structure_h.maps.fld # grid_data_file
+spacing 1.000                        # spacing(A)
+receptor_types C NA SA HD A Zn N OA  # receptor atom types
+ligand_types OA C N HD               # ligand atom types
+receptor SlyD_delta-IF_structure_h.pdbqt # macromolecule
+gridcenter 30.3995 12.767500000000002 28.319 # xyz-coordinates or auto
+smooth 0.5                           # store minimum energy w/in rad(A)
+map SlyD_delta-IF_structure_h.OA.map # atom-specific affinity map
+map SlyD_delta-IF_structure_h.C.map  # atom-specific affinity map
+map SlyD_delta-IF_structure_h.N.map  # atom-specific affinity map
+map SlyD_delta-IF_structure_h.HD.map # atom-specific affinity map
+elecmap SlyD_delta-IF_structure_h.e.map # electrostatic potential map
+dsolvmap SlyD_delta-IF_structure_h.d.map              # desolvation potential map
+dielectric -0.1465                   # <0, AD4 distance-dep.diel;>0, constant

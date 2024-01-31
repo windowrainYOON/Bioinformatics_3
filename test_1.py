@@ -59,5 +59,23 @@ with open ('./random_seq.txt', 'w') as f: ## 자원을 획득하고 사용 직�
 ## hSCOTIN, mSCOTIN은 12.643
 
 ## Multimer
-## 서로 다른 두 sequence를 inputt으로 넣어주되, seq1:seq2을 넣어주고 
-돌려줌
+## 서로 다른 두 sequence를 inputt으로 넣어주되, seq1:seq2을 넣어주고 돌려줌
+
+## pymol
+## ^우클릭 + ^휠 클릭으로 원자 두개를 성택시 거리 계산 가능, 세개 선택 시 각도 계산 가
+
+
+## RMSD는 두 원자 간의 편차 평균인데, 이상치에 대해 예민한 경향을 가짐
+## 여러 측정법이 있지만, 오늘 배울 것은 TM-SCORE (이상치에 대해 예민하지 않음)
+## >>>conda install bioconda::tmalign
+## 아래 명령어를 pymol 창에 입력
+## tmalign name1, name2 
+
+## cealign(combinatorial expension alignment) : 서열 상동성은 없지만 구조적으로 우사한 두 단백질의 겹침 구조를 확인할 
+## super name1, name2
+
+## global optimization
+## 구조 공간에서 가장 낮은 에너지를 가지는 구조를 찾는 것
+## local minimum을 방지ㅏ기 위해서 확률 기반 알고리즘을 사용함
+
+## Autodock Vina를 이용해 docking simulation을 실습

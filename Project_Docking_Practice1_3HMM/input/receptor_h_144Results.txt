@@ -1,0 +1,10 @@
+Output #  1, Total Volume =  429.00, Total Energy per Vol, EPV =     -0.17492308
+Output #  2, Total Volume =  424.00, Total Energy per Vol, EPV =     -0.17430425
+Output #  3, Total Volume =  433.00, Total Energy per Vol, EPV =     -0.17375289
+Output #  4, Total Volume =  455.00, Total Energy per Vol, EPV =     -0.16880220
+Output #  5, Total Volume =  452.00, Total Energy per Vol, EPV =     -0.16494469
+Output #  6, Total Volume =  453.00, Total Energy per Vol, EPV =     -0.16330684
+Output #  7, Total Volume =  452.00, Total Energy per Vol, EPV =     -0.15983407
+Output #  8, Total Volume =  444.00, Total Energy per Vol, EPV =     -0.15155631
+Output #  9, Total Volume =  474.00, Total Energy per Vol, EPV =     -0.14281224
+Output # 10, Total Volume =  487.00, Total Energy per Vol, EPV =     -0.13802053
