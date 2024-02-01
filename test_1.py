@@ -44,38 +44,3 @@ for choice in choicelist:
 with open ('./random_seq.txt', 'w') as f: ## 자원을 획득하고 사용 직후 반납하는 문법
         f.write(a)
 
-## alphafold2 : coevolution 기반의 단백질 예측
-## conda install -c conda-forge pymol-open-source
-## brew install brewsci/bio/pymol
-## run pymol
-
-
-## 구조 비교 계산
-## pymol에서 두개 PDB를 다 열어줌
-## 구조 alignment (action -> alogn)
-
-## RMSD : 두 분자 간의 차이를 pymol이 자동으로 계산해줌, EGFR정도의 분자의 경우 2보다 작으면 높은 유사도를 갖는다고 생각, 값이 커지면 커질 수록 낮은 유사도
-## SCOTIN, SCOTIN delta IDR은 20.160
-## hSCOTIN, mSCOTIN은 12.643
-
-## Multimer
-## 서로 다른 두 sequence를 inputt으로 넣어주되, seq1:seq2을 넣어주고 돌려줌
-
-## pymol
-## ^우클릭 + ^휠 클릭으로 원자 두개를 성택시 거리 계산 가능, 세개 선택 시 각도 계산 가
-
-
-## RMSD는 두 원자 간의 편차 평균인데, 이상치에 대해 예민한 경향을 가짐
-## 여러 측정법이 있지만, 오늘 배울 것은 TM-SCORE (이상치에 대해 예민하지 않음)
-## >>>conda install bioconda::tmalign
-## 아래 명령어를 pymol 창에 입력
-## tmalign name1, name2 
-
-## cealign(combinatorial expension alignment) : 서열 상동성은 없지만 구조적으로 우사한 두 단백질의 겹침 구조를 확인할 
-## super name1, name2
-
-## global optimization
-## 구조 공간에서 가장 낮은 에너지를 가지는 구조를 찾는 것
-## local minimum을 방지ㅏ기 위해서 확률 기반 알고리즘을 사용함
-
-## Autodock Vina를 이용해 docking simulation을 실습
