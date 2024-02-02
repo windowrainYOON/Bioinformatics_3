@@ -35,7 +35,7 @@ SCOTIN, SCOTIN delta IDR은 20.160
 hSCOTIN, mSCOTIN은 12.643
 
 Multimer
-서로 다른 두 sequence를 inputt으로 넣어주되, seq1:seq2을 넣어주고 돌려줌
+서로 다른 두 sequence를 input으로 넣어주되, seq1:seq2을 넣어주고 돌려줌
 
 pymol
 ^우클릭 + ^휠 클릭으로 원자 두개를 성택시 거리 계산 가능, 세개 선택 시 각도 계산 가
@@ -98,4 +98,20 @@ DockQ는 protein-protein interaction 예측 model과 실제 protein-protein inte
 git clone https://github.com/bjornwallner/DockQ/
 pip install biopython
 python DockQ.py ./examples/model.pdb ./examples/native.pdb
+
+---
+---
+
+Protein의 구조변화를 예측하는 방법
+
+
+train on human curated database : ClinVar
+train on the weak labels : CADD
+unsupervised approaches : EVmutation, (CECS score : Cost of coupling, Coupling number)
+  interface, rest of surface, protein core 나누어서 분석 -> interface에 더 많은 disease mutant가 발견
+exploit protein structures : 
+
+
+AlphaMissense : protein-protein별로 mutation과 pathogenesity 등을 계산해 놓은 파일이 있음
+양이 엄청 많기 때문에 한줄 씩 읽어내려가는 코드가 필요함
 
